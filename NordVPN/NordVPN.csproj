@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="NUnit" />
+    <None Remove="NUnit3TestAdapter" />
+    <None Remove="NUnit.Analyzers" />
+    <None Remove="Microsoft.NET.Test.Sdk" />
+    <None Remove="Selenium.Support" />
+    <None Remove="Selenium.WebDriver.ChromeDriver" />
+    <None Remove="PAGES\" />
+    <None Remove="TESTS\" />
+    <None Remove="DotNetSeleniumExtras.WaitHelpers" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.5.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
+    <PackageReference Include="Selenium.Support" Version="4.6.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="108.0.5359.7100" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PAGES\" />
+    <Folder Include="TESTS\" />
+  </ItemGroup>
+</Project>
